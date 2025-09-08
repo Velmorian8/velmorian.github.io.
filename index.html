@@ -4,6 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Velmorian | Roblox Developer</title>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     :root{--bg:#f5f7fb;--card:#ffffff;--accent:#111827}
     *{box-sizing:border-box}
@@ -16,7 +18,7 @@
     ul{padding-left:18px}
     .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
     .skill{background:#eef2ff;padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px;color:#3730a3}
-    .btn{display:inline-block;padding:10px 14px;background:#0f172a;color:#fff;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;background:#0f172a;color:#fff;border-radius:10px;text-decoration:none;font-weight:600;margin:6px 0}
     footer{margin-top:22px;text-align:center;color:#64748b;font-size:13px}
     img{max-width:100%;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);margin-top:12px}
 
@@ -83,13 +85,22 @@
 
     <section class="card" style="text-align:center">
       <h2>Contact</h2>
-      <p class="muted">Message me on Discord:</p>
-      <a class="btn" href="#" onclick="alert('Discord: velmoriann')">velmoriann</a>
+      <p class="muted">Find me on:</p>
+      <a class="btn" href="#" onclick="alert('Discord: velmoriann')">
+        <i data-lucide="message-circle"></i> Discord
+      </a>
+      <a class="btn" href="https://www.roblox.com/users/yourUserId/profile" target="_blank">
+        <i data-lucide="cube"></i> Roblox
+      </a>
     </section>
 
     <footer>
       <div>Built for <strong>Velmorian</strong> — portfolio</div>
     </footer>
   </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
 </body>
 </html>
